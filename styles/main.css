@@ -1,0 +1,852 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+ 
+  display: block;
+  background-color: #000000;
+  margin: 2vh 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+.wrapper{
+   max-width: 1400px;
+  display: block;
+  margin: auto;
+}
+
+main {
+  height: 100%;
+  margin: 0 5%;
+}
+/*Header Section----------------------------*/
+header {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+}
+
+nav ul {
+  display: inline-flex;
+  list-style: none;
+  font-size: 26px;
+  margin-top: 2vw;
+}
+
+.logo-img{
+  width:70px;
+  height:auto;
+}
+
+nav li a {
+  text-decoration: none;
+  padding-left: 30px;
+  color: #ffffff;
+  transition: all 0.2s ease-out;
+}
+
+nav li a:hover {
+  color: #bbed2f;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+/*Display-page section-----------------------*/
+.display-page {
+  height: 92vh;
+  margin: 0 2%;
+  
+}
+.center-vertically{
+  display: grid;
+  grid-template-columns: 58% 29%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.display-text {
+  width: max-content;
+  margin-top: 3rem;
+}
+.display-img {
+  width: fit-content;
+  height: auto;
+}
+
+.display-text h4 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: "Lucida Sans", Arial, sans-serif;
+  font-weight: normal;
+}
+.display-text h2 {
+  margin: 0;
+  font-size: 40px;
+  font-family: "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 1pt;
+}
+.display-text h5 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-color: #bbed2f;
+  text-decoration-thickness: 0.3vw;
+}
+
+.contact-me-1 {
+  padding: 0.2rem;
+  width: 12rem;
+  font-size: 1.7rem;
+  border: 2px solid #bbed2f;
+  background-color: #000000;
+  color: #bbed2f;
+  border-radius: 50px;
+  margin-top: 2rem;
+  transition: all 0.2s ease-out;
+}
+.social-icons{
+  margin-top: 1rem;
+}
+.scroll-down-left {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  transform: rotate(90deg);
+}
+
+.scroll-down-right {
+  position: absolute;
+  top: 45%;
+  right: 0%;
+  transform: rotate(90deg);
+}
+
+.contact-me-1:hover {
+  background-color: #bbed2f;
+  color: #000000;
+  cursor: pointer;
+}
+
+/*Project section--------------------------*/
+#work {
+  margin: 0 2% 10% 2%;
+}
+#work h2 {
+  font-size: 9rem;
+}
+
+.work-img {
+  width: 100%;
+}
+.project-details h4 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 1.46rem;
+}
+.project-details a {
+  margin-right: 0.5rem;
+}
+.project-details p {
+  margin-top: 0.5rem;
+  font-size: 1.7rem;
+}
+.web-stack{
+  list-style: none;
+display: flex;
+margin-top: 1rem;
+margin-bottom: 1rem;
+color: color(srgb 0.7671 0.905 0.3846);
+}
+.web-stack li{
+  margin-right: 1rem;
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+.slideshow-arrows{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 2rem;
+}
+
+.slideshow-arrows svg{
+  width: 2.5rem;
+  fill: #bbed2f !important; 
+  display: block;
+  border: 2px solid #bbed2f;
+  padding: 2px 16px;
+  border-radius: 5px;
+}
+.slideshow-arrows svg:hover{
+  background-color: #bbed2f !important;
+  fill: #000000 !important;
+  cursor: pointer;
+}
+
+.slide {
+  display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.project-links:hover{
+  color: #bbed2f;
+  cursor: pointer;
+}
+
+/*About section---------------------------*/
+#about {
+  margin: 0 2% 10% 2%;
+}
+#about h2 {
+  font-size: 9rem;
+}
+
+.download-resume {
+  color: #ffffff;
+  font-size: 1.7rem;
+}
+.resume a{
+  padding: 0.2rem;
+  font-size: 1.7rem;
+  color: #bbed2f;
+  text-decoration: none;
+}
+.resume a:hover{
+  color: #000000;
+  cursor: pointer;
+}
+.resume {
+    padding: 0.2rem;
+    width: 9rem;
+    border: 2px solid #bbed2f;
+    background-color: #000000;
+    border-radius: 50px;
+    margin-top: 1rem;
+    transition: all 0.2s ease-out;
+}
+.resume:hover {
+  background-color: #bbed2f;
+  color: #000000;
+  cursor: pointer;
+}
+svg,
+g {
+  fill: #ffffff;
+  transition: all 1s ease-out;
+}
+svg:hover,
+g:hover {
+  fill: #bbed2f;
+  cursor: pointer;
+}
+.bio {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.highlight {
+  color: #bbed2f;
+}
+
+.skills-heading,
+.tools-heading,
+.edu-heading,
+.languages h4 {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.skills,
+.tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 2rem;
+  color: #bbed2f;
+  margin: 2rem 2rem 0;
+}
+.skills ul,
+.tools ul {
+  list-style: none;
+}
+
+.certificates {
+  display: grid;
+  grid-template-rows: auto;
+  font-size: 2rem;
+}
+.certificates div {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.date {
+  font-size: 1.5rem;
+}
+
+.certificates a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 1rem;
+  transition: all 0.2s ease-out;
+}
+.certificates a:hover {
+  color: #bbed2f;
+  cursor: pointer;
+}
+
+.languages ul {
+  list-style: none;
+  font-size: 2rem;
+  margin:1rem 2rem 0;
+  line-height: 1.5;
+  color: #bbed2f;
+}
+.languages p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/*Contact Me section--------------------------*/
+#contact {
+  margin: 0 2% 10% 2%;
+}
+#contact h2 {
+  font-size: 9rem;
+}
+.contact-container h4 {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+.send-email{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+.send-email a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #bbed2f;
+  padding: 0.4rem;
+}
+
+#say-hello-btn{
+  padding: 0.4rem;
+  width: 9rem;
+  border: 2px solid #bbed2f;
+  background-color: #000000;
+  border-radius: 50px;
+  margin-top: 1rem;
+  transition: all 0.2s ease-out;
+}
+
+#say-hello-btn:hover {
+  background-color: #bbed2f;
+  cursor: pointer;
+}
+
+.send-email a:hover{
+  color: #000000;
+}
+/*
+form {
+  margin: 2rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.email-input,
+.name-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+input,
+textarea {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1%;
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  background-color: #000000;
+  margin-top: .5rem;
+}
+input {
+  width: auto;
+}
+textarea {
+  width: 73%;
+}
+textarea:focus,
+input:focus {
+  border: 2px solid #bbed2f;
+  color: #bbed2f;
+}
+
+#submit {
+  padding: 0.2rem;
+  width: 9rem;
+  font-size: 1.7rem;
+  border: 2px solid #bbed2f;
+  background-color: #000000;
+  color: #bbed2f;
+  border-radius: 50px;
+  margin-top: 1rem;
+  transition: all 0.2s ease-out;
+}
+#submit:hover {
+  background-color: #bbed2f;
+  color: #000000;
+  cursor: pointer;
+}
+#clear {
+  font-size: 1.7rem;
+  background-color: #b7b7b7d9;
+  color: #000000;
+  border: none;
+  border-radius: 50px;
+  padding: 0.2rem;
+  width: 9rem;
+  margin-left: 1rem;
+  transition: all 0.2s ease-out;
+}
+#clear:hover {
+  background-color: #c8c8c8;
+  cursor: pointer;
+}*/
+
+.contact-info {
+  display: flex;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    margin-right: 2vw;
+    font-weight: bold;
+    font-size: 1.7rem;
+    align-items: center;
+}
+.contact-info div {
+  flex: 1;
+}
+.contact-info img {
+  margin-right: 1rem;
+  width: fit-content;
+  max-width: 100px;
+  height: auto;
+  float: left;
+}
+.contact-info p{
+  padding-top: 0.5em;
+}
+.copy-email {
+  position: relative;
+  display: inline-block;
+}
+
+.copy-email .hintText {
+  visibility: hidden;
+  width: 10rem;
+  font-size: 1rem;
+  background-color: #c8c8c8;
+  color: #000000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -6rem;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+
+.copy-email .hintText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #c8c8c8 transparent transparent transparent;
+}
+
+.copy-email:hover .hintText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.copy-email button {
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  transition: all 0.2s ease-out;
+}
+.copy-email button:hover {
+  color: #bbed2f;
+  cursor: pointer;
+}
+
+.copy-email button p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.contact-icons {
+  text-align: end;
+}
+
+/*Footer section---------------*/
+
+footer div {
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+
+.footer-links a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.footer-links a:hover {
+  color: #bbed2f;
+}
+.love-icon {
+  width: 1.8rem;
+  height: auto;
+  margin-left: 0.5rem;
+}
+
+/*Animations------*/
+.section-heading {
+  color: #bbed2f;
+  visibility: hidden;
+}
+.step {
+  visibility: hidden;
+}
+
+.slideIn {
+  visibility: visible;
+  animation: slidein 1s ease-in;
+}
+.slideUp {
+  visibility: visible;
+  animation-name: show_it;
+  animation-duration: 1s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes show_it {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/*Media Queries-------------------------------------------------*/
+@media all and (max-width: 1000px) {
+  body{
+    width: auto
+  };
+  .logo-img {
+    width: 56px;
+  }
+  nav ul {
+    font-size: 16px;
+  }
+
+  .display-page{
+    margin: 0 2%;
+  }
+
+  .center-vertically {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1.5fr;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .display-text {
+    order: 1;
+    justify-self: center;
+    height: fit-content;
+    text-align: center;
+    margin-top: 9%;
+  }
+  .display-img {
+    justify-self: center;
+    height: fit-content;
+  }
+  .display-img img {
+    width: 260px;
+  }
+  .display-text h2 {
+    font-size: 32px;
+    line-height: 1.7;
+  }
+  .display-text h4 {
+    font-size: 20px;
+  }
+  .display-text h5 {
+    font-size: 22px;
+  }
+  .contact-me-1 {
+    font-size: 20px;
+    width: auto;
+    padding: 0.5em 1.3em;
+    border-width: 1px;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+    width: auto;
+  }
+  svg {
+    width: 33px;
+  }
+  .social-icons svg:hover {
+    fill: #bbed2f;
+    cursor: pointer;
+  }
+
+  /*Work section---*/
+  #work{
+
+  }
+  #work h2 {
+    font-size: 70px;
+    margin-top: 1vh;
+  }
+  .project-grid{
+    grid-template-columns: 1fr;
+  }
+
+  #forward-arrow, #backward-arrow{
+    display: none;
+  }
+
+  .work-container{
+    display: block;
+  }
+
+  .project-details p{
+    font-size: 22px;
+  }
+.step h4{
+  font-size: 32px;
+}
+  .project-links{
+    margin-top: 2vh;
+  }
+  /*About Section*/
+  #about{
+    margin-top: 28%;
+  }  
+  #about h2 {
+    font-size: 70px;
+  }
+
+  .download-resume,
+  .resume a{
+    font-size: 20px;
+  }
+
+  .resume {
+    width: auto;
+    padding: 0.2em 0.8em;
+  }
+
+  .bio {
+    font-size: 20px;
+  }
+
+  .skills,
+  .tools {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 2vh;
+    font-size: 22px;
+  }
+  .course,
+  .languages ul {
+    font-size: 22px;
+  }
+  .date {
+    font-size: 16px;
+  }
+  .course a {
+    font-size: 14px;
+  }
+  .course svg {
+    width: 14px;
+  }
+  .languages p {
+    font-size: 14px;
+  }
+
+  /*Contact Section*/
+  #contact{
+    margin-top: 28%;
+  }  
+
+  #contact h2 {
+    font-size: 70px;
+  }
+  .send-email{
+    font-size: 22px;
+  }
+  /*
+  form {
+    font-size: 22px;
+  }
+  .email-input,
+  .name-input {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 100%;
+  }
+  input,
+  textarea {
+    font-size: 20px;
+    width: auto;
+  }
+ #submit,
+  #clear {
+    width: auto;
+    padding: 0.2em 0.8em;
+    font-size: 20px;
+  }
+  #submit{
+    border-width: 1px;
+  }*/
+
+  #say-hello-btn{
+    width: auto;
+    padding: 0.2em 0.6em;
+    font-size: 20px;
+    border-width: 1px;
+  }
+  .send-email a{
+    padding: 0.2em 0.6em;
+    font-size: 20px;
+  }
+
+  .contact-info {
+    display: block;
+    margin-top: 8vh;
+  }
+  .contact-info div {
+    display: block;
+    height: auto;
+    font-size: 20px;
+    text-align: left;
+    font-weight: normal;
+  }
+  .contact-info img {
+    max-width: 65px;
+  }
+
+  .copy-email {
+    margin-top: 3vh;
+  }
+  .copy-email button p {
+    font-size: 20px;
+    margin-left: 21vw;
+    font-weight: normal;
+  }
+  .profession {
+    font-size: 18px;
+  }
+  .copy-email .hintText {
+    width: 27vw;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 0.5vw;
+    margin-left: -17vw;
+    font-weight: normal;
+  }
+  .contact-icons {
+    margin-left: 21vw;
+    margin-top: 3vh;
+    font-size: 30px;
+  }
+
+  footer {
+    margin-top: 6vh;
+  }
+  footer div {
+    font-size: 14px;
+  }
+  .love-icon {
+    width: 17px;
+    height: 17px;
+  }
+  .footer-links {
+    margin-bottom: 5vh;
+  }
+}
+

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<!-- Lovejot singh Bhullar, Today's Date: 07/12/2021 -->
+
+<html lang="en">
+
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/change_theme.css">
+	<link rel="stylesheet" href="../styles/main.css">
+	
+	<!--Scrollama library-->
+	<script src="https://unpkg.com/scrollama"></script>
+	<script src="https://unpkg.com/intersection-observer"></script>
+
+	
+
+	<script src="https://kit.fontawesome.com/1bf93e9eab.js" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="../scripts/main.js" defer ></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	</style> 
+	<script>
+		function copy_email() {
+		  navigator.clipboard.writeText("Lovejot@gmail.com");
+		  
+		  var message = document.getElementById("hint");
+		  message.innerHTML = "Copied";
+		}
+		
+		function copied() {
+		  var message = document.getElementById("hint");
+		  message.innerHTML = "Copy to clipboard";
+		}
+	</script>
+
+
+<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+	
+		  // Store hash
+		  var hash = this.hash;
+	
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+	   
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+	</script>
+	
+</head>
+
+<body class="fade">
+	<div class="wrapper">
+		<!-- Navigation -->
+		<header>
+			
+			<div class="top-logo">
+				<a href=""./portfolio.html><img class="logo-img" src="../media/logo.png" alt="logo"  loading="eager"></a>
+			</div>
+				
+			<nav>
+				<ul>
+					<li><a href="#about"> About </a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact"> Contact </a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<!-- Main Area -->
+		<main>
+			<!--Display page section-->
+			<section class="display-page">
+				<div class="center-vertically">
+					<div class="display-text">
+						<h4>Hello, I'm</h4>
+							
+						<h2>Lovejot Bhullar.</h2>
+						<h5> Front End Web Developer</h5 >
+							
+						<a href="#contact"><button class="contact-me-1" name="contact-me" >Contact Me </button></a>
+
+						<div class="social-icons">
+							
+							
+							<a href="http://www.github.com" target="_blank"><i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+								width="40px" height="auto"
+								viewBox="0 0 172 172">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" 
+								stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
+								stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+								font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+								<g><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,32.23853 22.19947,59.21387 52.12747,66.67867c-0.32107,
+									-0.9288 -0.52747,-2.00667 -0.52747,-3.34253v-11.75907c-2.79213,0 -7.47053,0 -8.64587,0c-4.70707,0 -8.8924,-2.02387 -10.922,
+									-5.78493c-2.2532,-4.1796 -2.64307,-10.57227 -8.22733,-14.4824c-1.65693,-1.30147 -0.3956,-2.7864 1.5136,-2.58573c3.526,0.9976
+									6.45,3.41707 9.202,7.00613c2.74053,3.5948 4.03053,4.40893 9.1504,4.40893c2.48253,0 6.19773,-0.14333 9.69507,-0.69373c1.88053,
+									-4.77587 5.13133,-9.17333 9.10453,-11.2488c-22.9104,-2.3564 -33.84387,-13.75427 -33.84387,-29.22853c0,-6.66213 2.838,-13.1064 
+									7.65973,-18.53587c-1.5824,-5.38933 -3.57187,-16.38013 0.60773,-20.56547c10.30853,0 16.54067,6.68507 18.03707,8.49107c5.13707,
+									-1.76013 10.77867,-2.75773 16.70693,-2.75773c5.93973,0 11.60427,0.9976 16.7528,2.7692c1.4792,-1.79453 7.71707,-8.50253 18.04853,
+									-8.50253c4.1968,4.19107 2.1844,15.22773 0.5848,20.6056c4.79307,5.418 7.61387,11.84507 7.61387,18.49573c0,15.4628 -10.91627,26.85493
+									-33.79227,29.2228c6.2952,3.2852 10.8876,12.51587 10.8876,19.4704v15.67493c0,0.59627 -0.13187,1.02627 -0.20067,1.53653c26.80907,
+									-9.39693 46.06733,-34.85293 46.06733,-64.87267c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g></g></svg></i>
+							</a>
+
+							<a href="https://www.linkedin.com/in/lovejot-singh-bhullar-2550" target="_blank" style="margin-left: 1em;">
+								<i class="linkedin" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+								width="40px" height="auto"
+								viewBox="0 0 30 30">   
+								<path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,
+								2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,
+								11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,
+								0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z 
+								M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,
+								1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,
+								2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path></svg></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="display-img">
+						<img src="../media/laptop wave.png" alt="my bitmoji waving out of laptop" style="max-width:100%;height:auto;">
+					</div>
+
+					<!--<p class="scroll-down-left">Scroll down -></p>
+					<p class="scroll-down-right">Scroll down -></p>-->
+				</div>
+			</section>
+
+			<!--Work section-->
+			<section id="work">
+				<h2 class="section-heading">Work</h2>
+				
+				<div class="work-container step">
+					
+					<!--Project1-->
+					<div class="project1 fade slide">	
+							
+							<div class="project-grid">
+								<div class="work-img">
+									<img src="../media/workPicture1.png" alt="work" style="max-width:100%;height:auto;">
+								
+								</div>
+							
+								<div class="project-details">
+									<h4> Portfolio website</h4>
+									<p>Personal Portfolio website built with HTML, CSS, JavaScript and scrollama library 
+										for interactions. It is hosted on W3Spaces.
+									</p>
+									<ul class="web-stack">
+										<li>HTML</li>
+										<li>CSS</li>
+										<li>JS</li> 
+										<li>jquery</li>
+										<li>Scrollama</li>
+									</ul>
+
+									<div class="project-links">
+										<a class="work-url" href="" target="_blank">
+											<span class="external-link"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+												width="33px" height="auto"
+												viewBox="0 0 16 16"
+												style=" fill:#ffffff;"><path d="M 9 2 L 9 3 L 12.292969 3 L 6.023438 9.273438 
+												L 6.726563 9.976563 L 13 3.707031 L 13 7 L 14 7 L 14 2 Z M 4 4 C 2.894531 4 2 4.894531 
+												2 6 L 2 12 C 2 13.105469 2.894531 14 4 14 L 10 14 C 11.105469 
+												14 12 13.105469 12 12 L 12 7 L 11 8 L 11 12 C 11 12.550781 10.550781
+												13 10 13 L 4 13 C 3.449219 13 3 12.550781 3 12 L 3 6 C 3 5.449219 
+												3.449219 5 4 5 L 8 5 L 9 4 Z"></path></svg></span></a>
+
+										<a href="http://www.github.com" target="_blank"><i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+											width="33px" height="auto"
+											viewBox="0 0 172 172">
+											<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" 
+											stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
+											stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+											font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+											<g fill="#ffffff"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,32.23853 22.19947,59.21387 52.12747,66.67867c-0.32107,
+												-0.9288 -0.52747,-2.00667 -0.52747,-3.34253v-11.75907c-2.79213,0 -7.47053,0 -8.64587,0c-4.70707,0 -8.8924,-2.02387 -10.922,
+												-5.78493c-2.2532,-4.1796 -2.64307,-10.57227 -8.22733,-14.4824c-1.65693,-1.30147 -0.3956,-2.7864 1.5136,-2.58573c3.526,0.9976
+												6.45,3.41707 9.202,7.00613c2.74053,3.5948 4.03053,4.40893 9.1504,4.40893c2.48253,0 6.19773,-0.14333 9.69507,-0.69373c1.88053,
+												-4.77587 5.13133,-9.17333 9.10453,-11.2488c-22.9104,-2.3564 -33.84387,-13.75427 -33.84387,-29.22853c0,-6.66213 2.838,-13.1064 
+												7.65973,-18.53587c-1.5824,-5.38933 -3.57187,-16.38013 0.60773,-20.56547c10.30853,0 16.54067,6.68507 18.03707,8.49107c5.13707,
+												-1.76013 10.77867,-2.75773 16.70693,-2.75773c5.93973,0 11.60427,0.9976 16.7528,2.7692c1.4792,-1.79453 7.71707,-8.50253 18.04853,
+												-8.50253c4.1968,4.19107 2.1844,15.22773 0.5848,20.6056c4.79307,5.418 7.61387,11.84507 7.61387,18.49573c0,15.4628 -10.91627,26.85493
+												-33.79227,29.2228c6.2952,3.2852 10.8876,12.51587 10.8876,19.4704v15.67493c0,0.59627 -0.13187,1.02627 -0.20067,1.53653c26.80907,
+												-9.39693 46.06733,-34.85293 46.06733,-64.87267c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g></g></svg></i>
+										</a>
+									</div>
+								</div>
+							</div>	
+					</div>
+
+					<!--Project 2-->
+					<div class="project2 fade slide">
+						<div class="project-grid">
+							<div class="work-img">
+								<img src="../media/workPicture2.png" alt="work" style="max-width:100%;height:auto;">
+							
+							</div>
+						
+							<div class="project-details">
+								<h4> Online Book Store</h4>
+								<p>School group project that represents an online library where Users can download eBooks, make, edit, and delete their comments.
+									Developed Frontend using JavaScript, HTML and CSS.
+ 									Used Node and MongoDB for middleware and backend, respectively. 
+								</p>
+								<ul class="web-stack">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JS</li> 
+									<li>Node</li>
+									<li>MongoDB</li>
+								</ul>
+
+								<div class="project-links">
+									<a class="work-url" href="" target="_blank">
+										<span class="external-link"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+											width="33px" height="auto"
+											viewBox="0 0 16 16"
+											style=" fill:#ffffff;"><path d="M 9 2 L 9 3 L 12.292969 3 L 6.023438 9.273438 
+											L 6.726563 9.976563 L 13 3.707031 L 13 7 L 14 7 L 14 2 Z M 4 4 C 2.894531 4 2 4.894531 
+											2 6 L 2 12 C 2 13.105469 2.894531 14 4 14 L 10 14 C 11.105469 
+											14 12 13.105469 12 12 L 12 7 L 11 8 L 11 12 C 11 12.550781 10.550781
+											13 10 13 L 4 13 C 3.449219 13 3 12.550781 3 12 L 3 6 C 3 5.449219 
+											3.449219 5 4 5 L 8 5 L 9 4 Z"></path></svg></span></a>
+
+									<a href="http://www.github.com" target="_blank"><i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+										width="33px" height="auto"
+										viewBox="0 0 172 172">
+										<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" 
+										stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
+										stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+										font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+										<g fill="#ffffff"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,32.23853 22.19947,59.21387 52.12747,66.67867c-0.32107,
+											-0.9288 -0.52747,-2.00667 -0.52747,-3.34253v-11.75907c-2.79213,0 -7.47053,0 -8.64587,0c-4.70707,0 -8.8924,-2.02387 -10.922,
+											-5.78493c-2.2532,-4.1796 -2.64307,-10.57227 -8.22733,-14.4824c-1.65693,-1.30147 -0.3956,-2.7864 1.5136,-2.58573c3.526,0.9976
+											6.45,3.41707 9.202,7.00613c2.74053,3.5948 4.03053,4.40893 9.1504,4.40893c2.48253,0 6.19773,-0.14333 9.69507,-0.69373c1.88053,
+											-4.77587 5.13133,-9.17333 9.10453,-11.2488c-22.9104,-2.3564 -33.84387,-13.75427 -33.84387,-29.22853c0,-6.66213 2.838,-13.1064 
+											7.65973,-18.53587c-1.5824,-5.38933 -3.57187,-16.38013 0.60773,-20.56547c10.30853,0 16.54067,6.68507 18.03707,8.49107c5.13707,
+											-1.76013 10.77867,-2.75773 16.70693,-2.75773c5.93973,0 11.60427,0.9976 16.7528,2.7692c1.4792,-1.79453 7.71707,-8.50253 18.04853,
+											-8.50253c4.1968,4.19107 2.1844,15.22773 0.5848,20.6056c4.79307,5.418 7.61387,11.84507 7.61387,18.49573c0,15.4628 -10.91627,26.85493
+											-33.79227,29.2228c6.2952,3.2852 10.8876,12.51587 10.8876,19.4704v15.67493c0,0.59627 -0.13187,1.02627 -0.20067,1.53653c26.80907,
+											-9.39693 46.06733,-34.85293 46.06733,-64.87267c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g></g></svg></i>
+									</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<!--Project 3-->
+					<div class="project3 fade slide">
+						<div class="project-grid">
+							<div class="work-img">
+								<img src="../media/workPicture1.png" alt="work" style="max-width:100%;height:auto;">
+							
+							</div>
+						
+							<div class="project-details">
+								<h4>  website 3</h4>
+								<p>Personal Portfolio website built with HTML, CSS, JavaScript and scrollama library 
+									for interactions. It is hosted on W3Spaces.
+								</p>
+
+								<div class="project-links">
+									<a class="work-url" href="" target="_blank">
+										<span class="external-link"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+											width="33px" height="auto"
+											viewBox="0 0 16 16"
+											style=" fill:#ffffff;"><path d="M 9 2 L 9 3 L 12.292969 3 L 6.023438 9.273438 
+											L 6.726563 9.976563 L 13 3.707031 L 13 7 L 14 7 L 14 2 Z M 4 4 C 2.894531 4 2 4.894531 
+											2 6 L 2 12 C 2 13.105469 2.894531 14 4 14 L 10 14 C 11.105469 
+											14 12 13.105469 12 12 L 12 7 L 11 8 L 11 12 C 11 12.550781 10.550781
+											13 10 13 L 4 13 C 3.449219 13 3 12.550781 3 12 L 3 6 C 3 5.449219 
+											3.449219 5 4 5 L 8 5 L 9 4 Z"></path></svg></span></a>
+
+									<a href="http://www.github.com" target="_blank"><i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+										width="33px" height="auto"
+										viewBox="0 0 172 172">
+										<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" 
+										stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
+										stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+										font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+										<g fill="#ffffff"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,32.23853 22.19947,59.21387 52.12747,66.67867c-0.32107,
+											-0.9288 -0.52747,-2.00667 -0.52747,-3.34253v-11.75907c-2.79213,0 -7.47053,0 -8.64587,0c-4.70707,0 -8.8924,-2.02387 -10.922,
+											-5.78493c-2.2532,-4.1796 -2.64307,-10.57227 -8.22733,-14.4824c-1.65693,-1.30147 -0.3956,-2.7864 1.5136,-2.58573c3.526,0.9976
+											6.45,3.41707 9.202,7.00613c2.74053,3.5948 4.03053,4.40893 9.1504,4.40893c2.48253,0 6.19773,-0.14333 9.69507,-0.69373c1.88053,
+											-4.77587 5.13133,-9.17333 9.10453,-11.2488c-22.9104,-2.3564 -33.84387,-13.75427 -33.84387,-29.22853c0,-6.66213 2.838,-13.1064 
+											7.65973,-18.53587c-1.5824,-5.38933 -3.57187,-16.38013 0.60773,-20.56547c10.30853,0 16.54067,6.68507 18.03707,8.49107c5.13707,
+											-1.76013 10.77867,-2.75773 16.70693,-2.75773c5.93973,0 11.60427,0.9976 16.7528,2.7692c1.4792,-1.79453 7.71707,-8.50253 18.04853,
+											-8.50253c4.1968,4.19107 2.1844,15.22773 0.5848,20.6056c4.79307,5.418 7.61387,11.84507 7.61387,18.49573c0,15.4628 -10.91627,26.85493
+											-33.79227,29.2228c6.2952,3.2852 10.8876,12.51587 10.8876,19.4704v15.67493c0,0.59627 -0.13187,1.02627 -0.20067,1.53653c26.80907,
+											-9.39693 46.06733,-34.85293 46.06733,-64.87267c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g></g></svg></i>
+									</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				
+					<div class="slideshow-arrows">	
+						<a class="previous-arrow" onclick="plusSlides(-1)">
+							<svg style="fill:#bbed2f" viewBox="0 0 25 25">
+							<g id="Left-2" data-name="Left">
+							<polygon points="24 12.001 2.914 12.001 8.208 6.706 7.501 5.999 1 12.501 7.5 19.001 8.207 18.294 2.914 13.001 24 13.001 24 12.001"
+							 /></g></svg>
+						</a>
+						<a class="forward-arrow" onclick="plusSlides(1)"><svg  style="fill:#bbed2f" viewBox="0 0 25 25">
+							<g id="Right-2" data-name="Right">
+							<polygon points="17.5 5.999 16.793 6.706 22.086 11.999 1 11.999 1 12.999 22.086 12.999 16.792 18.294 17.499 19.001 24 12.499 17.5 5.999"
+							/></g></svg></a>
+					</div>
+
+					<!-- The dots/circles -->
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span> 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
+				</div>
+
+				
+			</section>
+
+
+			<!--About section-->
+			<section class="step" id="about">
+				<h2 class="section-heading">About</h2>
+
+				<div class="step">
+					<p class="download-resume"> Download <button class="resume"><a href="../media/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></button></p>
+					<a href="https://www.linkedin.com/in/lovejot-singh-bhullar-2550" target="_blank" style="margin-right: 1vw;">
+						<i class="linkedin" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="3vw" height="auto"
+						viewBox="0 0 30 30">   
+						<path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,
+						2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,
+						11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,
+						0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z 
+						M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,
+						1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,
+						2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path></svg></i>
+					</a>
+					
+					<a href="http://www.github.com" target="_blank"><i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="3vw" height="auto"
+						viewBox="0 0 172 172">
+						<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" 
+						stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
+						stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+						font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+						<g fill="#ffffff"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,32.23853 22.19947,59.21387 52.12747,66.67867c-0.32107,
+							-0.9288 -0.52747,-2.00667 -0.52747,-3.34253v-11.75907c-2.79213,0 -7.47053,0 -8.64587,0c-4.70707,0 -8.8924,-2.02387 -10.922,
+							-5.78493c-2.2532,-4.1796 -2.64307,-10.57227 -8.22733,-14.4824c-1.65693,-1.30147 -0.3956,-2.7864 1.5136,-2.58573c3.526,0.9976
+							6.45,3.41707 9.202,7.00613c2.74053,3.5948 4.03053,4.40893 9.1504,4.40893c2.48253,0 6.19773,-0.14333 9.69507,-0.69373c1.88053,
+							-4.77587 5.13133,-9.17333 9.10453,-11.2488c-22.9104,-2.3564 -33.84387,-13.75427 -33.84387,-29.22853c0,-6.66213 2.838,-13.1064 
+							7.65973,-18.53587c-1.5824,-5.38933 -3.57187,-16.38013 0.60773,-20.56547c10.30853,0 16.54067,6.68507 18.03707,8.49107c5.13707,
+							-1.76013 10.77867,-2.75773 16.70693,-2.75773c5.93973,0 11.60427,0.9976 16.7528,2.7692c1.4792,-1.79453 7.71707,-8.50253 18.04853,
+							-8.50253c4.1968,4.19107 2.1844,15.22773 0.5848,20.6056c4.79307,5.418 7.61387,11.84507 7.61387,18.49573c0,15.4628 -10.91627,26.85493
+							-33.79227,29.2228c6.2952,3.2852 10.8876,12.51587 10.8876,19.4704v15.67493c0,0.59627 -0.13187,1.02627 -0.20067,1.53653c26.80907,
+							-9.39693 46.06733,-34.85293 46.06733,-64.87267c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g></g></svg></i>
+					</a>
+					<p class="bio">I'm a <span class="highlight">Web developer.</span><br>
+						From India, based in Canada.</p>
+				</div>
+				<div class="skills-container ">
+					<div class="main-skills step">
+						<div class="skills-heading">
+							<h4>Main Skills</h4>
+						</div>			
+					
+						<div class="skills">
+							<div>
+								<ul>
+									<li>JavaScript</li>
+									<li>C#, Java EE</li>
+									<li>HTML</li>
+									<li>CSS</li>
+								</ul>
+							</div>
+
+							<div>
+								<ul>
+									<li>Node.js</li>
+									<li>MongoDB</li>
+									<li>MySQL</li>
+									<li>Python</li>
+								</ul>
+							</div>
+
+							<div>
+								<ul>
+									<li>AAP.NET Core</li>
+									<li>Express.js</li>
+									<li>JQuery</li>						
+								</ul>
+							</div>	
+						</div>				
+					</div>
+
+					<div class="main-tools step">
+						<div class="tools-heading">
+							<h4>Tools</h4>
+						</div>			
+					
+						<div class="tools">
+							<div>
+								<ul>
+									<li>VS Code</li>
+									<li>Visual Studio</li>
+									<li>Eclipse</li>
+									<li>Pycharm</li>
+								</ul>
+							</div>
+
+							<div>
+								<ul>
+									<li>Android Studio</li>
+									<li>MySql Workbench</li>
+									<li>Xamp</li>
+								</ul>
+							</div>
+
+							<div>
+								<ul>
+									<li>Microsoft Word</li>
+									<li>Powerpoint</li>
+									<li>Excel</li>	
+									<li>Canva</li>					
+								</ul>
+							</div>	
+						</div>				
+					</div>
+					
+				</div>
+
+				<div class="education step">
+					<div class="edu-heading">
+						<h4 >Education</h4>
+					</div>
+					<div class="certificates course">		
+						<div class="diploma">
+							<p>Diploma of <span class="highlight" >Computer Programmer.</span><br> 
+								From Lambton College, Canada.<br> 
+								<span class="date">2021-2022</span> 
+							</p>
+						</div>
+
+						<div class="crash-course course">
+							<p>Crash course on <span class="highlight" >Python.</span> <br> 
+								From Google, through Coursera.<br> 
+								<span class="date">Jan 11, 2022 </span>
+								<a href="https://coursera.org/share/f585c348b4cfee1c701219690723a199" target="_blank">
+									<span class="external-link">View certificate
+									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+									width="1rem" height="auto"
+									viewBox="0 0 16 16"
+									style=" fill:#ffffff;"><path d="M 9 2 L 9 3 L 12.292969 3 L 6.023438 9.273438 
+									L 6.726563 9.976563 L 13 3.707031 L 13 7 L 14 7 L 14 2 Z M 4 4 C 2.894531 4 2 4.894531 
+									2 6 L 2 12 C 2 13.105469 2.894531 14 4 14 L 10 14 C 11.105469 
+									14 12 13.105469 12 12 L 12 7 L 11 8 L 11 12 C 11 12.550781 10.550781
+									13 10 13 L 4 13 C 3.449219 13 3 12.550781 3 12 L 3 6 C 3 5.449219 
+									3.449219 5 4 5 L 8 5 L 9 4 Z"></path></svg></span></a> </p>
+						</div>
+
+						<div class="linkedin-course course">
+							<p>Various <span class="highlight" >LinkedIn certificates.</span>
+								<a href="https://www.linkedin.com/learning/certificates/4498e01384f6ecf369909d2b23c184c2f94e735c8eb5c0a4e2dbf6b28f238d5e?trk=share_certificate" target="_blank">
+								<span class="external-link">View certificate <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+									width="1rem" height="auto"
+									viewBox="0 0 16 16"
+									style=" fill:#ffffff;"><path d="M 9 2 L 9 3 L 12.292969 3 L 6.023438 9.273438 
+									L 6.726563 9.976563 L 13 3.707031 L 13 7 L 14 7 L 14 2 Z M 4 4 C 2.894531 4 2 4.894531 
+									2 6 L 2 12 C 2 13.105469 2.894531 14 4 14 L 10 14 C 11.105469 
+									14 12 13.105469 12 12 L 12 7 L 11 8 L 11 12 C 11 12.550781 10.550781
+									13 10 13 L 4 13 C 3.449219 13 3 12.550781 3 12 L 3 6 C 3 5.449219 
+									3.449219 5 4 5 L 8 5 L 9 4 Z"></path></svg></span></a></p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="languages step">
+					<h4>Languages</h4>
+					<p>#fluent</p>
+
+					<ul>
+						<li>English</li>
+						<li>Punjabi</li>
+						<li>Hindi</li>
+					</ul>
+
+				</div>
+			</section>
+
+			
+			<!--Contact section-->
+			<section class="step" id="contact">
+				<h2 class="section-heading">Contact</h2>
+				<div class="contact-container step">
+					<h4>Get in touch</h4>
+
+					<div class="send-email">
+						<p>	I will be glad to have a chat with you.</p>
+						<button id="say-hello-btn"><a href="mailto:Lovejot@gmail.com">Say Hello</a></button>
+					</div>
+
+					<!--<form class="contact-form">
+						<div class="name-input">
+							<div>
+								<label for="first_name">First Name</label><br>
+								<input type="text" id="first_name" name="first_name">
+							</div>
+
+							<div>						
+								<label for="last_name">Last Name</label><br>
+								<input type="text" id="last_name" name="last_name"><br><br>
+							</div>
+						</div>
+
+						<div class="email-input">
+							<div>
+								<label for="subject">Subject</label><br>
+								<input type="text" id="subject" name="subject">
+							</div>
+							<div>
+								<label for="email">Email</label><br>
+								<input type="email" id="email" name="email" autocomplete="on" required><br><br>
+							</div>	
+						</div>
+						<!--<label for="math-problem" id="problem">Solve</label><br>
+						<input type="number" id="math-problem" name="math-problem" required ><br><br>
+
+						<label for="message">Message</label><br>
+						<textarea id="message" name="message" rows="5" required ></textarea><br><br>
+
+						<button id="submit" type="submit">Submit</button>
+						<button id="clear" type="reset"> Clear</button>
+
+					</form>-->
+				</div>
+				<div class="contact-info">
+					<div>					
+						<img src="../media/Untitled design-2.svg">
+
+						<p>Lovejot Singh Bhullar <br> <span class="profession">Web developer</span></p>
+						
+					</div>
+					<div style="text-align: center;">
+						<div class="copy-email">
+							<button onclick="copy_email()" onmouseout="copied()">
+							<span class="hintText" id="hint">Copy to clipboard</span>
+							<p>Lovejot@gmail.com</p>
+							</button>
+							</div>
+					</div>
+					<div class="contact-icons" >
+						<a href="https://www.linkedin.com/in/lovejot-singh-bhullar-2550" target="_blank" style="margin-right: 1vw;">
+							<i class="linkedin" ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="50px" height="auto"
+							viewBox="0 0 30 30">   
+							<path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,
+							2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,
+							11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,
+							0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z 
+							M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,
+							1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,
+							2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path></svg></i>
+						</a>
+						
+						<a href="http://www.github.com" target="_blank"><i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="50px" height="auto"
+							viewBox="0 0 172 172">
+							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" 
+							stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" 
+							stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+							font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+							<g><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,32.23853 22.19947,59.21387 52.12747,66.67867c-0.32107,
+								-0.9288 -0.52747,-2.00667 -0.52747,-3.34253v-11.75907c-2.79213,0 -7.47053,0 -8.64587,0c-4.70707,0 -8.8924,-2.02387 -10.922,
+								-5.78493c-2.2532,-4.1796 -2.64307,-10.57227 -8.22733,-14.4824c-1.65693,-1.30147 -0.3956,-2.7864 1.5136,-2.58573c3.526,0.9976
+								6.45,3.41707 9.202,7.00613c2.74053,3.5948 4.03053,4.40893 9.1504,4.40893c2.48253,0 6.19773,-0.14333 9.69507,-0.69373c1.88053,
+								-4.77587 5.13133,-9.17333 9.10453,-11.2488c-22.9104,-2.3564 -33.84387,-13.75427 -33.84387,-29.22853c0,-6.66213 2.838,-13.1064 
+								7.65973,-18.53587c-1.5824,-5.38933 -3.57187,-16.38013 0.60773,-20.56547c10.30853,0 16.54067,6.68507 18.03707,8.49107c5.13707,
+								-1.76013 10.77867,-2.75773 16.70693,-2.75773c5.93973,0 11.60427,0.9976 16.7528,2.7692c1.4792,-1.79453 7.71707,-8.50253 18.04853,
+								-8.50253c4.1968,4.19107 2.1844,15.22773 0.5848,20.6056c4.79307,5.418 7.61387,11.84507 7.61387,18.49573c0,15.4628 -10.91627,26.85493
+								-33.79227,29.2228c6.2952,3.2852 10.8876,12.51587 10.8876,19.4704v15.67493c0,0.59627 -0.13187,1.02627 -0.20067,1.53653c26.80907,
+								-9.39693 46.06733,-34.85293 46.06733,-64.87267c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g></g></svg></i>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<hr>
+				<div>
+					<p>Copyright &copy; 2020</p>
+					<p style="display:inline-flex;">Made with <img class="love-icon"  src="https://img.icons8.com/fluency/48/000000/filled-like.png"/></p>
+					<p class="footer-links"><a href="">Legal</a> | <a href="">Privacy Policy</a></p>
+				</div>
+				
+			</footer>
+
+			
+		</main>
+	</div>
+</body>
+<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+	
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+	
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("slide");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+
+
+</html>
